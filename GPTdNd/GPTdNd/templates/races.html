@@ -1,0 +1,15 @@
+{% extends "nav_bar.html" %}
+
+{% block content %}
+	<h1>Races</h1>
+		<div>
+			<label for="races" text-align="center">Choose a race:</label>
+			<select id="races" onchange="displayRaceData()">
+				<!-- Options will be added dynamically -->
+			</select>
+		</div>
+		<div id="info">
+			<!-- Race information will be displayed here dynamically -->
+		</div>
+	<script src="/static/load_races.js"></script>
+{% endblock %}

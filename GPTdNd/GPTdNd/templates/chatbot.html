@@ -1,0 +1,15 @@
+{% extends "nav_bar.html" %}
+
+{% block content %}
+    <h1>AI Dungeon Master</h1>
+    <div class="chat-container">
+      {% if message %}
+        <p><strong>DM:</strong> {{ message }}</p>
+      {% endif %}
+    </div>
+    <form action="/chatbot" method="POST">
+      <label for="prompt">Enter your action:</label>
+      <input type="text" id="prompt" name="prompt" required>
+      <button type="submit">Proceed</button>
+    </form>
+{% endblock %}

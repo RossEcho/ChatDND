@@ -1,0 +1,262 @@
+/* Variables */
+:root {
+    --main-color: #ffffff;
+    --background-color: #333333;
+    --main-font: 'Montserrat', sans-serif;
+    --highlight-color: #dc143c;
+    --highlight-color-hover: #ff69b4;
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--main-color);
+	font-family: 'IM Fell English', serif;
+	background-image: url("mainBG.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me label {
+    font-size: 24px; /* Adjust to your liking */
+	color: #c20404;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin-left: 5px; /* Adds a little spacing between the checkbox and the label */
+	margin-bottom: 0.5px;
+}
+
+
+/* Headings */
+h1 {
+	color: #9e0303;
+	text-align: center;
+	font-size: 48px;
+	margin-bottom: 50px;
+	text-shadow: 3px 3px #000000;
+}
+
+h2 {
+	color: #780b0b;
+	text-align: center;
+	font-size: 32px;
+	margin-bottom: 50px;
+	text-shadow: 2px 2px #000000;
+}
+
+h3 {
+	color: #0d0333;
+	font-size: 16px;
+	margin-bottom: 15px;
+	text-shadow: 1px 1px #000000;
+}
+
+/* Forms */
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+/* Character sheet page */
+.character-sheet {
+    width: 80%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.character-sheet h2 {
+    font-size: 36px;
+    color: var(--highlight-color);
+}
+
+.character-sheet p {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+
+/* Race/Class page */
+#info {
+    margin: 20px auto;
+    padding: 20px;
+    width: 70%;
+    border: 2px solid #E6E6FA;
+    border-radius: 20px;
+    background: url("/static/page_background.jpg") no-repeat center center;
+    background-size: cover;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	font-family: 'IM Fell English', serif;
+    color: #333;
+}
+
+#info h2 {
+    color: ##333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#info h3 {
+    color: ##333;
+    margin-top: 20px;
+}
+
+#info ul {
+    list-style-type: square;
+}
+
+#info li {
+    margin: 10px 0;
+}
+
+/* Front page */
+
+.content {
+        text-align: justify;
+        margin: 0 auto;
+        width: 75%;
+        line-height: 1.6;
+        font-size: 18px;
+    }
+    .prompt {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    a {
+        color: #c20404;
+        text-decoration: none;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+    a:hover {
+        color: #ff0000;
+    }
+	
+	a.button {
+        display: inline-block;
+        margin: 0 10px;
+        padding: 10px 20px;
+        color: #fa0202;
+        background-color: #1f0101;
+        border: 2px solid #f73e3e;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    a.button:hover {
+        color: #ffffff;
+        background-color: #b80202;
+    }
+
+
+label {
+	font-size: 24px;
+	margin-bottom: 20px;
+	display: block;
+    text-align: center;
+}
+
+input[type="text"], textarea, select {
+	font-size: 20px;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: var(--main-color);
+}
+
+input[type="email"], textarea, select {
+	font-size: 20px;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: var(--main-color);
+}
+
+input[type="password"], textarea, select {
+	font-size: 20px;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: var(--main-color);
+}
+
+input[type="submit"], button {
+	font-size: 20px;
+	padding: 10px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: var(--highlight-color);
+	color: var(--main-color);
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+	input[type="submit"]:hover, button:hover {
+		background-color: var(--highlight-color-hover);
+	}
+
+textarea {
+	height: 300px;
+}
+
+	input[type="text"]:focus, textarea:focus {
+		outline: none;
+		box-shadow: 0px 0px 5px var(--highlight-color-hover);
+	}
+
+input[readonly] {
+	background-color: #eeeeee;
+	cursor: default;
+}
+
+select {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+
+/* Navigation */
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #212121;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav li {
+	float: left;
+}
+
+	nav li a {
+		display: block;
+		color: #7a0000;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 18px;
+		font-weight: bold;
+		text-shadow: 1px 1px #000;
+		transition: background-color 0.3s;
+	}
+
+		nav li a:hover {
+			background

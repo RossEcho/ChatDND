@@ -1,0 +1,36 @@
+{% extends "nav_bar.html" %}
+
+{% block content %}
+        <section>
+            <h1>D&D With AI</h1>
+            <form action="/chatbot" method="POST">
+                <label for="prompt">Enter your message:</label>
+                <input type="text" id="prompt" name="prompt" placeholder="Your message here">
+                <button type="submit">Send</button>
+            </form>
+            {% if message %}
+            <div>
+                <label for="chatbotResponse">Chatbot response:</label>
+                <textarea id="chatbotResponse" rows="4" cols="50" readonly>{{ message }}</textarea>
+            </div>
+            {% endif %}
+        </section>
+        <section>
+            <form action="/dice_roll" method="POST">
+                <fieldset>
+                    <legend>Select a dice:</legend>
+                    <select id="dice" name="dice" aria-label="Select a dice">
+                        <!-- Same options here -->
+                    </select>
+                    <button type="submit">Roll Dice</button>
+                </fieldset>
+            </form>
+            {% if dice_roll %}
+            <div>
+                <label for="diceRoll">Dice roll</label>
+                <input id="diceRoll" type="text" value="{{ dice_roll }}" readonly>
+            </div>
+            {% endif %}
+        </section>
+    </main>
+{% endblock %}

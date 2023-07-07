@@ -1,0 +1,99 @@
+
+!Barbarian
+@A fierce warrior of primitive background who can enter a battle rage
+#Hit Die: d12
+$Primary Ability: Strength
+%Saves: Strength & Constitution 
+
+
+!Bard
+@An inspiring magician whose power echoes the music of creation
+#Hit Die: d8
+$Primary Ability: Charisma
+%Saves: Dexterity & Charisma
+
+
+!Cleric
+@A priestly champion who wields divine magic in service of a higher power
+#Hit Die: d8
+$Primary Ability: Wisdom
+%Saves: Wisdom & Charisma
+
+
+!Druid
+@A priest of the Old Faith, wielding the powers of nature and adopting animal forms
+#Hit Die: d8
+$Primary Ability: Wisdom
+%Saves: Intelligence & Wisdom
+
+
+!Fighter
+@A master of martial combat, skilled with a variety of weapons and armor
+#Hit Die: d10
+$Primary Ability: Strength or Dexterity
+%Saves: Strength & Constitution
+
+
+!Monk
+@A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection
+#Hit Die: d8
+$Primary Ability: Dexterity & Wisdom
+%Saves: Strength & Dexterity
+
+
+!Paladin
+@A holy warrior bound to a sacred oath
+#Hit Die: d10
+$Primary Ability: Strength & Charisma
+%Saves: Wisdom & Charisma
+
+
+!Ranger
+@A warrior who combats threats on the edges of civilization
+#Hit Die: d10
+$Primary Ability: Dexterity & Wisdom
+%Saves: Strength & Dexterity
+
+
+!Rogue
+@A scoundrel who uses stealth and trickery to overcome obstacles and enemies
+#Hit Die: d8
+$Primary Ability: Dexterity
+%Saves: Dexterity & Intelligence
+
+
+!Sorcerer
+@A spellcaster who draws on inherent magic from a gift or bloodline
+#Hit Die: d6
+$Primary Ability: Charisma
+%Saves: Constitution & Charisma
+
+
+!Warlock
+@A wielder of magic that is derived from a bargain with an extraplanar entity
+#Hit Die: d8
+$Primary Ability: Charisma
+%Saves: Wisdom & Charisma
+
+
+!Wizard
+@A scholarly magic-user capable of manipulating the structures of reality
+#Hit Die: d6
+$Primary Ability: Intelligence
+%Saves: Intelligence & Wisdom
+
+
+!Artificer
+@Masters of invention, artificers use ingenuity and magic to unlock extraordinary capabilities in objects.
+#Hit Die: d8
+$Primary Ability: Intelligence
+%Saves: Constitution & Intelligence
+
+
+!Blood Hunter
+@Willing to suffer whatever it takes to achieve victory, these adept warriors have forged themselves into a potent force dedicated to protecting the innocent.
+#Hit Die: d10
+$Primary Ability: Strength or Dexterity, & Intelligence or Wisdom
+%Saves: Dexterity & Intelligence
+
+

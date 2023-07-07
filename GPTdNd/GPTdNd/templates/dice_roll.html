@@ -1,0 +1,50 @@
+﻿{% extends "nav_bar.html" %}
+
+{% block content %}
+    <h1>Roll Dice</h1>
+    <form action="/roll_dice" method="POST">
+        <label for="dice">Select a dice:</label>
+        <select name="dice">
+            <option value="d4">d4</option>
+            <option value="d6">d6</option>
+            <option value="d8">d8</option>
+            <option value="d10">d10</option>
+            <option value="d12">d12</option>
+            <option value="d20">d20</option>
+            <option value="d100">d100</option>
+        </select>
+        <button type="submit">Roll Dice</button>
+    </form>
+    {% if roll %}
+    <p>You rolled a {{ dice }} and got a {{ roll }}!</p>
+    {% endif %}
+</body>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roll Dice</title>
+</head>
+<body>
+    <h1>Roll Dice</h1>
+    <form action="/dice_roll" method="POST">
+        <label for="dice">Select a dice:</label>
+        <select name="dice">
+            <option value="d4">d4</option>
+            <option value="d6">d6</option>
+            <option value="d8">d8</option>
+            <option value="d10">d10</option>
+            <option value="d12">d12</option>
+            <option value="d20">d20</option>
+            <option value="d100">d100</option>
+        </select>
+        <button type="submit">Roll Dice</button>
+    </form>
+    {% if roll %}
+    <p>You rolled a {{ dice }} and got a {{ roll }}!</p>
+    {% endif %}
+{% endblock %}
+
+
+
+
+

@@ -1,0 +1,15 @@
+{% extends "nav_bar.html" %}
+
+{% block content %}
+<h1>Classes</h1>
+<div>
+    <label for="classes" text-align="center">Choose a class:</label>
+    <select id="classes" onchange="displayClassData()">
+        <!-- Options will be added dynamically -->
+    </select>
+</div>
+<div id="info">
+    <!-- Class information will be displayed here dynamically -->
+</div>
+<script src="/static/load_classes.js"></script>
+{% endblock %}

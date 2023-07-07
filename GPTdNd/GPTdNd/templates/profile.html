@@ -1,0 +1,30 @@
+﻿{% extends "nav_bar.html" %}
+
+{% block content %}
+        <section>
+            <h2>User Info</h2>
+            <ul>
+                <li>Email: {{ user.email }}</li>
+                <li>Username: {{ user.username }}</li>
+            </ul>
+            <!-- Consider adding an "Edit Profile" button here -->
+        </section>
+
+        <section>
+            <h2>Characters</h2>
+            {% if characters %}
+            <ul>
+                {% for character in characters %}
+                <li>
+                    {{ character.name }} - {{ character.race }} {{ character.class }}
+                    <!-- Consider adding a "View Details", "Edit", or "Delete" button here -->
+                </li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <p>No characters found. <a href="/build_character">Create a new character?</a></p>
+            {% endif %}
+        </section>
+
+        <button onclick="window.location.href='/build_character'">Create New Character</button>
+{% endblock %}

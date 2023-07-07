@@ -1,0 +1,40 @@
+﻿{% extends "nav_bar.html" %}
+
+{% block content %}
+        <h1>Register</h1>
+        <form action="{{ url_for('register') }}" method="POST">
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                {% if email_error %}
+                <p class="error">{{ email_error }}</p>
+                {% endif %}
+            </div>
+			
+			<div>
+                <label for="uname">Username:</label>
+                <input type="text" id="uname" name="uname" placeholder="Username" required>
+                {% if uname_error %}
+                <p class="error">{{ uname_error }}</p>
+                {% endif %}
+            </div>
+            
+            <div>
+                <label for="password">Enter Password:</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+                {% if password_error %}
+                <p class="error">{{ password_error }}</p>
+                {% endif %}
+            </div>
+
+            <div>
+                <label for="password2">Confirm Password:</label>
+                <input type="password" id="password2" name="password2" minlength="8" required>
+                {% if password2_error %}
+                <p class="error">{{ password2_error }}</p>
+                {% endif %}
+            </div>
+
+            <button type="submit">REGISTER</button>
+        </form>
+{% endblock %}

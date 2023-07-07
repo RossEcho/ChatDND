@@ -1,0 +1,32 @@
+{% extends "nav_bar.html" %}
+
+{% block content %}
+<h1>Character Sheet</h1>
+<div class="character-sheet">
+    <h2>Character name: {{ name }}</h2>
+    <p>Race: {{ race }}</p>
+    <div id="race-description"></div>
+    <p>Class: {{ class_ }}</p>
+    <div id="class-description"></div>
+    <p>Level: {{ level }}</p>
+    <p>Strength: {{ strength }}</p>
+    <p>Dexterity: {{ dexterity }}</p>
+    <p>Constitution: {{ constitution }}</p>
+    <p>Intelligence: {{ intelligence }}</p>
+    <p>Wisdom: {{ wisdom }}</p>
+    <p>Charisma: {{ charisma }}</p>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const character = {
+    race: '{{ race }}',
+    class: '{{ class_ }}'
+};
+console.log(character);
+</script>
+<script src="/static/char_sheet__dis.js"></script>
+{% endblock %}
+
+
